@@ -1,9 +1,9 @@
 #ifndef CAMERA_HEADER
 #define CAMERA_HEADER
 
-#include "Vector3.h"
-#include "Vector2.h"
-#include "Ray.h"
+#include "Vector3.hpp"
+#include "Vector2.hpp"
+#include "Ray.hpp"
 
 class Camera
 {

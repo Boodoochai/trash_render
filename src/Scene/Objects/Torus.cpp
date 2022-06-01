@@ -1,4 +1,4 @@
-#include "Torus.h"
+#include "Torus.hpp"
 
 double Torus::dist_from_point(const Vector3 point)
 {

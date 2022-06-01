@@ -1,4 +1,4 @@
-#include "Vector2.h"
+#include "Vector2.hpp"
 
 Vector2::Vector2(const double a_x, const double a_y): x(a_x), y(a_y)
 {

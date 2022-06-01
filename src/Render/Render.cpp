@@ -1,4 +1,4 @@
-#include "Render.h"
+#include "Render.hpp"
 
 Ray Render::ray_from_screen_cords(Scene *scene, const Vector2 cords)
 {

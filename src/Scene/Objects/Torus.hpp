@@ -1,7 +1,7 @@
 #ifndef TORUS_HEADER
 #define TORUS_HEADER
 
-#include "Object.h"
+#include "Object.hpp"
 
 class Torus : public Object
 {

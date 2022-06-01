@@ -1,4 +1,4 @@
-#include "Object.h"
+#include "Object.hpp"
 
 double Object::dist_from_point(const Vector3 point)
 {

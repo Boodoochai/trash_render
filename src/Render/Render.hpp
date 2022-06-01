@@ -3,9 +3,9 @@
 
 #include <ncurses.h>
 
-#include "Ray.h"
-#include "Scene.h"
-#include "Window.h"
+#include "Ray.hpp"
+#include "Scene.hpp"
+#include "Window.hpp"
 
 class Render
 {

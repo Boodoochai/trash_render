@@ -1,7 +1,7 @@
 #ifndef OBJECT_HEADER
 #define OBJECT_HEADER
 
-#include "Vector3.h"
+#include "Vector3.hpp"
 
 class Object
 {

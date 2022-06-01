@@ -1,4 +1,4 @@
-#include "Vector3.h"
+#include "Vector3.hpp"
 
 Vector3::Vector3(const double a_x, const double a_y, const double a_z)
     : x(a_x), y(a_y), z(a_z)

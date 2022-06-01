@@ -1,4 +1,4 @@
-#include "Sphere.h"
+#include "Sphere.hpp"
 
 double Sphere::dist_from_point(const Vector3 point)
 {

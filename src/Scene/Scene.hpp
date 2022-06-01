@@ -2,9 +2,9 @@
 #define SCENE_HEADER
 
 #include <vector>
-#include "Ray.h"
-#include "Camera.h"
-#include "Object.h"
+#include "Ray.hpp"
+#include "Camera.hpp"
+#include "Object.hpp"
 
 class Scene
 {

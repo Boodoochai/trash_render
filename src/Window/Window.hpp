@@ -1,7 +1,7 @@
 #ifndef WINDOW_HEADER
 #define WINDOW_HEADER
 
-#include "Vector2.h"
+#include "Vector2.hpp"
 
 struct Window
 {

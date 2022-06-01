@@ -3,8 +3,8 @@
 
 #include <math.h>
 
-#include "Object.h"
-#include "Vector3.h"
+#include "Object.hpp"
+#include "Vector3.hpp"
 
 class Sphere : public Object
 {

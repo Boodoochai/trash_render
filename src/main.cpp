@@ -1,13 +1,13 @@
 #include <ncurses.h>
 #include <math.h>
 
-#include "Vector3.h"
-#include "Camera.h"
-#include "Render.h"
-#include "Scene.h"
-#include "Sphere.h"
-#include "Torus.h"
-#include "Window.h"
+#include "Vector3.hpp"
+#include "Camera.hpp"
+#include "Render.hpp"
+#include "Scene.hpp"
+#include "Sphere.hpp"
+#include "Torus.hpp"
+#include "Window.hpp"
 
 void build_scene(Scene *scene)
 {

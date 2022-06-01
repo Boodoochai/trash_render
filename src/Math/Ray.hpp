@@ -1,7 +1,7 @@
 #ifndef RAY_HEADER
 #define RAY_HEADER
 
-#include "Vector3.h"
+#include "Vector3.hpp"
 
 class Ray
 {
