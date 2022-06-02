@@ -10,7 +10,9 @@ public:
     double y;
     double z;
     
-    explicit Vector3(const double a_x, const double a_y, const double a_z);
+    explicit Vector3() : x(0), y(0), z(0) {}
+    explicit Vector3(const double a_x, const double a_y, const double a_z)
+        : x(a_x), y(a_y), z(a_z) {}
 
     Vector3 operator+(const Vector3 arg) const;
 
@@ -27,11 +29,11 @@ public:
     Vector3 &operator/=(const double arg);
     
     Vector3 &operator*=(const double arg);
+    
+    double length() const;
 
-    double length();
+    Vector3 normalized() const;
 
-    Vector3 normalized();
-  
     double dot_product(const Vector3 arg) const;
 };
 

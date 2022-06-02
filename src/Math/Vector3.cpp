@@ -1,11 +1,5 @@
 #include "Vector3.hpp"
 
-Vector3::Vector3(const double a_x, const double a_y, const double a_z)
-    : x(a_x), y(a_y), z(a_z)
-{
-
-}
-
 Vector3 Vector3::operator+(const Vector3 arg) const 
 {
     return Vector3(x + arg.x, y + arg.y, z + arg.z);
@@ -58,19 +52,19 @@ Vector3 &Vector3::operator*=(const double arg)
     return *this;
 }
 
-double Vector3::length() 
+double Vector3::dot_product(const Vector3 arg) const
+{
+    return arg.x * x + arg.y * y + arg.z * z;
+}
+
+double Vector3::length() const
 {
     return sqrt(x*x + y*y + z*z);
 }
 
-Vector3 Vector3::normalized() 
+Vector3 Vector3::normalized() const
 {
     return *this / this->length();
-}
-
-double Vector3::dot_product(const Vector3 arg) const
-{
-    return arg.x * x + arg.y * y + arg.z * z;
 }
 
 Vector3 operator*(double arg1, Vector3 arg2)

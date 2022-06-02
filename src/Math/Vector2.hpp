@@ -30,7 +30,6 @@ public:
     double length();
 
     Vector2 normalized();
-    
 };
 
 #endif

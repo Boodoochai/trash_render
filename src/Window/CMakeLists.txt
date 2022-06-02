@@ -4,7 +4,7 @@ target_sources(Window
   PRIVATE
   Window.cpp
   PUBLIC
-  ${CMAKE_CURRENT_LIST_DIR}/Window.h
+  ${CMAKE_CURRENT_LIST_DIR}/Window.hpp
   )
 
 target_include_directories(Window

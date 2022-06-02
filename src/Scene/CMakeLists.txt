@@ -6,7 +6,7 @@ target_sources(Scene
   PRIVATE
   Scene.cpp
   PUBLIC
-  ${CMAKE_CURRENT_LIST_DIR}/Scene.h
+  ${CMAKE_CURRENT_LIST_DIR}/Scene.hpp
   )
 
 target_include_directories(Scene

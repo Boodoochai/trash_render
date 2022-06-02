@@ -5,8 +5,8 @@ target_sources(Render
     Camera.cpp
     Render.cpp
   PUBLIC
-  ${CMAKE_CURRENT_LIST_DIR}/Camera.h
-  ${CMAKE_CURRENT_LIST_DIR}/Render.h
+  ${CMAKE_CURRENT_LIST_DIR}/Camera.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/Render.hpp
   )
 
 target_include_directories(Render

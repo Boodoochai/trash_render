@@ -8,6 +8,7 @@
 #include "Sphere.hpp"
 #include "Torus.hpp"
 #include "Window.hpp"
+#include "Quaternion.hpp"
 
 void build_scene(Scene *scene)
 {
@@ -88,7 +89,11 @@ int main(int argc, char **argv)
                 cur_obj_num = 0;
             }
             break;
-        case ':':
+        case 'r':
+            pos = scene->get_objects()[cur_obj_num]->get_position();
+            pos = (Quaternion(0.707d, 0.707d, 0, 0) * Quaternion(pos) * 
+                    Quaternion(0.707d, -0.707d, 0, 0)).im;
+            scene->get_objects()[cur_obj_num]->set_position(pos);
             break;
         }
 
