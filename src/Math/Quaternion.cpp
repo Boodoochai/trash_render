@@ -26,6 +26,11 @@ double Quaternion::dot_product(const Quaternion arg) const
     return re*arg.re + im.x*arg.im.x + im.y*arg.im.y + im.z*arg.im.z;
 }
 
+Vector3 Quaternion::rotate_vector(const Vector3 vec) const
+{
+    return (*this *Quaternion(vec) * this->conjugated()).im;
+}
+
 Quaternion Quaternion::operator+(const Quaternion arg) const
 {
     return Quaternion(re + arg.re, im + arg.im);

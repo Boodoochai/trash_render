@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.23)
+
 project(c++_terminal_trash_render)
 
 add_executable(${CMAKE_PROJECT_NAME} main.cpp)
@@ -12,9 +14,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     Math
     Scene
     Render
-    Window)
-
-target_link_libraries(${CMAKE_PROJECT_NAME} 
+    Window
     m
     ncurses
     stdc++)

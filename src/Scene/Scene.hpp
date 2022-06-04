@@ -2,6 +2,7 @@
 #define SCENE_HEADER
 
 #include <vector>
+
 #include "Ray.hpp"
 #include "Camera.hpp"
 #include "Object.hpp"
@@ -10,7 +11,7 @@ class Scene
 {
 private:
     Camera *camera;
-    std::vector<Object*> objects;
+    std::vector<Object *> objects;
 
 public:
     Scene();

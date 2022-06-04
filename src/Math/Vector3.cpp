@@ -57,6 +57,11 @@ double Vector3::dot_product(const Vector3 arg) const
     return arg.x * x + arg.y * y + arg.z * z;
 }
 
+Vector3 Vector3::cross_product(const Vector3 arg) const
+{
+    return Vector3(y*arg.z - z*arg.y, z*arg.x - x*arg.z, x*arg.y - y*arg.x);
+}
+
 double Vector3::length() const
 {
     return sqrt(x*x + y*y + z*z);
