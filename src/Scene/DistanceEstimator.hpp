@@ -3,10 +3,9 @@
 
 #include "Vector3.hpp"
 
-class DistanceEstimator
-{
+class DistanceEstimator {
 public:
-    virtual double get_distance(const Vector3 point) const = 0;
+  virtual double get_distance(const Vector3 point) const = 0;
 };
 
 #endif

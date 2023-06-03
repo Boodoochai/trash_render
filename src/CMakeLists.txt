@@ -9,12 +9,12 @@ add_subdirectory(Render)
 add_subdirectory(Scene)
 add_subdirectory(Window)
 
-target_link_libraries(${CMAKE_PROJECT_NAME} 
-    PRIVATE
-    Math
-    Scene
-    Render
-    Window
-    m
-    ncurses
-    stdc++)
+target_link_libraries(
+  ${CMAKE_PROJECT_NAME}
+  PRIVATE Math
+          Scene
+          Render
+          Window
+          m
+          ncurses
+          stdc++)

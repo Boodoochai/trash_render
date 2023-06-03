@@ -1,2 +1,8 @@
 build/
 demos/
+CMakeCache.txt
+*.cmake
+Makefile
+CMakeFiles/
+bin/
+lib/

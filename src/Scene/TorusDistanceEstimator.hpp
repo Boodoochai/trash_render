@@ -6,15 +6,14 @@
 
 class Torus;
 
-class TorusDistanceEstimator : public DistanceEstimator
-{
+class TorusDistanceEstimator : public DistanceEstimator {
 private:
-    const Torus *torus;
+  const Torus *torus;
 
 public:
-    TorusDistanceEstimator(const Torus *obj) : torus(obj) {}
+  TorusDistanceEstimator(const Torus *obj) : torus(obj) {}
 
-    double get_distance(const Vector3 point) const override;
+  double get_distance(const Vector3 point) const override;
 };
 
 #endif

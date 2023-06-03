@@ -7,16 +7,15 @@
 #include "Scene.hpp"
 #include "Window.hpp"
 
-class Render
-{
+class Render {
 public:
-    Window window;
-    
-    Render(Window arg) : window(arg) {}
+  Window window;
 
-    Ray ray_from_screen_cords(Scene* scene, const Vector2 cords);
-    double raymarch(Scene *scene, const Ray ray);
-    void draw(Scene *scene);
+  Render(Window arg) : window(arg) {}
+
+  Ray ray_from_screen_cords(Scene *scene, const Vector2 cords);
+  double raymarch(Scene *scene, const Ray ray);
+  void draw(Scene *scene);
 };
 
 #endif

@@ -6,14 +6,14 @@
 
 class Sphere;
 
-class SphereDistanceEstimator : public DistanceEstimator
-{
+class SphereDistanceEstimator : public DistanceEstimator {
 private:
-    const Sphere *sphere;
-public:
-    SphereDistanceEstimator(const Sphere *obj) : sphere(obj) {}   
+  const Sphere *sphere;
 
-    double get_distance(const Vector3 point) const; 
+public:
+  SphereDistanceEstimator(const Sphere *obj) : sphere(obj) {}
+
+  double get_distance(const Vector3 point) const;
 };
 
 #endif
