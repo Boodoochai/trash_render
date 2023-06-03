@@ -21,7 +21,9 @@ public:
   virtual ~Sphere() = default;
 
   Sphere(const Vector3 pos, const double rad, const char col)
-      : Shape(), relative_position(pos), radius(rad), color(col) {}
+      : Shape(), radius(rad), color(col) {
+    set_relative_position(pos);
+  }
 
   char get_color() const override { return color; }
   void set_color(const char color) { this->color = color; }

@@ -11,7 +11,7 @@
 #include "Window.hpp"
 
 void build_scene(Scene *scene) {
-  Torus *tor1 = new Torus(Vector3(30, 0, 0), 6, 3,
+  Torus *tor1 = new Torus(Vector3(40, 0, 0), 6, 3,
                           Vector3(-1 * sqrt(2) / 2, 0, sqrt(2) / 2), 0);
   scene->add_object(tor1);
 

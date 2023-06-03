@@ -20,8 +20,9 @@ public:
   virtual ~Torus() = default;
 
   Torus(const Vector3 pos, double R, double r, Vector3 rot, char col)
-      : Shape(), relative_position(pos), major_radius(R), minor_radius(r),
-        rotation(rot), color(col) {}
+      : Shape(), major_radius(R), minor_radius(r), rotation(rot), color(col) {
+    set_relative_position(pos);
+  }
 
   char get_color() const { return color; }
   void set_color(const char color) { this->color = color; }

@@ -32,9 +32,9 @@ DistanceEstimator *Torus::get_distance_estimator() const {
 }
 
 void Torus::set_relative_position(const Vector3 relative_position) {
-  Vector3 change = relative_position - this->relative_position;
+  Vector3 position_change = relative_position - this->relative_position;
   this->relative_position = relative_position;
-  absolute_position += change;
+  absolute_position += position_change;
 }
 
 void Torus::update_position() {
