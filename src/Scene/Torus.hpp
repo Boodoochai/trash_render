@@ -39,7 +39,7 @@ public:
                   CompositeObject *parent) const override;
   void rotate(const Quaternion quaternion) override;
   void rotate_around(const Vector3 point, const Quaternion quaternion) override;
-  void translate(const Vector3 arg) override;
+  void translate(const Vector3 position_change) override;
   DistanceEstimator *get_distance_estimator() const override;
 
   Vector3 get_relative_position() const override { return relative_position; }

@@ -21,11 +21,11 @@ public:
 
   Camera *get_camera() { return camera; }
   std::vector<Object *> get_objects() { return objects; }
-  void set_camera(Camera *arg) {
-    delete camera;
-    camera = arg;
+  void set_camera(Camera *camera) {
+    delete this->camera;
+    this->camera = camera;
   }
-  void set_objects(std::vector<Object *> arg) { objects = arg; }
+  void set_objects(std::vector<Object *> objects) { this->objects = objects; }
 };
 
 #endif

@@ -11,7 +11,7 @@ private:
   const Torus *torus;
 
 public:
-  TorusDistanceEstimator(const Torus *obj) : torus(obj) {}
+  TorusDistanceEstimator(const Torus *torus) : torus(torus) {}
 
   double get_distance(const Vector3 point) const override;
 };
